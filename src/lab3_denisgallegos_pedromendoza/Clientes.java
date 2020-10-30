@@ -37,7 +37,19 @@ public class Clientes extends Personas{
         this.carritodeproductos = carritodeproductos;
     }
     
-    //METODOS 
+    //METODOS DE ADMINISTRACION: 
+    public String toStringClientes (){
+        String n = "";
+        n += "{ ";
+        for (int c = 0; c < carritodeproductos.size();c++){
+            n += carritodeproductos.get(c)+ "";
+            if (c < carritodeproductos.size() - 1){
+                n += ", ";
+            }
+        }
+        n += " }";
+        return toStringPersonas()+" DINERO: "+dinero+" CARRITO: "+n;
+    }
     
     
     
