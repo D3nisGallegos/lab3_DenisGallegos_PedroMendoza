@@ -49,7 +49,19 @@ public class Locales {
         this.gerente = gerente;
     }
     
-    
+    //METODOS DE ADMINISTRACION: 
+    public String toStringLocales(){
+        String n = "";
+        n += "{ ";
+        for (int c = 0; c < listaempleados.size();c++){
+            n += listaempleados.get(c) +"";
+            if (c < listaempleados.size() - 1){
+                n += ", ";
+            }
+        }
+        n += " }";
+        return "NOMBRE: "+nombre+" GERENTE: "+gerente+" EMPLEADOS: "+n+" PRODUCTOS: ";
+    }
     
     
     
