@@ -10,7 +10,7 @@ public class Lab3_DenisGallegos_PedroMendoza {
     
     public static void main(String[] args) {
         
-        System.out.println("Hola");
+        
         
         
     }//Fin del MAIN.
