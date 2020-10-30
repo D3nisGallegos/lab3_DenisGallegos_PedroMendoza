@@ -8,7 +8,6 @@ import java.util.ArrayList;
 public class Restaurantes extends Locales{
     
     //ATRIBUTOS: 
-    private ArrayList <Comida> comida = new ArrayList();
     
     //CONSTRUCTORES: 
 

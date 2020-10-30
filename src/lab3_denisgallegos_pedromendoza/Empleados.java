@@ -52,7 +52,7 @@ public class Empleados extends Personas {
     }
     
     //METODOS DE ADMINISTRACION: 
-    public String toString(){
+    public String toStringEmpleados(){
         return toStringPersonas()+" H.entrada: "+horaentrada+" H.salida: "+horasalida;
     }
     
