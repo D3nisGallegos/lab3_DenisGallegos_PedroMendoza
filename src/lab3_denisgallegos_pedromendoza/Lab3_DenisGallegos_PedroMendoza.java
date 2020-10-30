@@ -22,10 +22,11 @@ public class Lab3_DenisGallegos_PedroMendoza {
         
         if(LogIn()){
             soyAdmin = true;
+            System.out.println("soy admin");
         }
-
-        
-        
+        else{
+            System.out.println("no soy admin");
+        }
         
     }//Fin del MAIN.
     
@@ -94,8 +95,9 @@ public class Lab3_DenisGallegos_PedroMendoza {
             password = read.next();
 
             errorLogin = false;
+            String[] text = usersLoginInfo.get(index);
             
-            if(!usersLoginInfo.get(index).equals(password)){
+            if(!text[1].equals(password)){
                 errorLogin = true;
             }
             
@@ -137,6 +139,10 @@ public class Lab3_DenisGallegos_PedroMendoza {
         
         System.out.println("Ingrese nueva contraseña: ");
         String password = read.next();
+        
+        String[] newUserInfo = {newUser, password};
+        
+        usersLoginInfo.add(newUserInfo);
         
     }
     
