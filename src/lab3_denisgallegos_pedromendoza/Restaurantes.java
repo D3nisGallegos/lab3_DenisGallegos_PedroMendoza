@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class Restaurantes extends Locales{
     
     //ATRIBUTOS: 
-    private ArrayList comida = new ArrayList();
+    private ArrayList <Comida> comida = new ArrayList();
     
     //CONSTRUCTORES: 
 
@@ -21,7 +21,7 @@ public class Restaurantes extends Locales{
     }
     
     //METODOS DE ADMINISTRACION: 
-    public String toString(){
+    public String toStringRestaurantes(){
         return toStringLocales();
     }
     

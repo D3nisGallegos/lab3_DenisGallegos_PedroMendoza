@@ -6,6 +6,7 @@ package lab3_denisgallegos_pedromendoza;
 public class Gerente {
     
     //ATRIBUTOS: 
+    private String nombre; 
     
     
     
